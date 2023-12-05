@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>DI CARRO</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4; /* Cor de fundo do corpo */
+            color: #333; /* Cor do texto principal */
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff; /* Cor de fundo do cabeçalho */
+            color: #fff; /* Cor do texto do cabeçalho */
+        }
+
+        nav {
+            text-align: center;
+            background-color: #0056b3; /* Cor de fundo da navegação */
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+        .menu li {
+            margin-bottom: 8px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            background-color: #fff; /* Cor de fundo do conteúdo principal */
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            grid-column: span 2; /* A imagem ocupará duas colunas */
+        }
+
+        h2 {
+            margin-top: 0; /* Remover a margem superior padrão do h2 */
+        }
+
+        /* Media queries para diferentes resoluções */
+        @media screen and (min-width: 768px) {
+            /* Altere os estilos conforme necessário para resoluções maiores */
+            .menu {
+                grid-template-columns: repeat(4, minmax(150px, 1fr));
+            }
+
+            main {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DI CARRO</h1>
+        VIAJE CONOSCO NO SEU CARRO
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">CONHEÇA OS NOSSOS SERVIÇOS</a></li>
+            <li><a href="#">BLOG DE VIAGENS</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="página 2.html">CADASTRE-SE</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <img src="C:\Users\joice.silva\Downloads\182714.jpg" alt="Família de carro"> 
+
+        <h2>QUEM SOMOS</h2>
+        <ul id="quemSomosList"></ul>
+
+        <h2>PARCEIROS</h2>
+        <ul id="parceirosList"></ul>
+
+        <h2>ROTEIROS</h2>
+        <ul id="roteirosList"></ul>
+    </main>
+
+    <script src="script.js"></script> 
+</body>
+</html>
