@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>DI CARRO</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+        .menu li {
+            margin-bottom: 8px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media queries para diferentes resoluções */
+        @media screen and (min-width: 768px) {
+            /* Altere os estilos conforme necessário para resoluções maiores */
+            .menu {
+                grid-template-columns: repeat(4, minmax(150px, 1fr));
+            }
+
+            main {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DI CARRO</h1>
+        VIAJE CONOSCO NO SEU CARRO
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">CONHEÇA OS NOSSOS SERVIÇOS</a></li>
+            <li><a href="#">BLOG DE VIAGENS</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="página 2.html">CADASTRE-SE</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <img src="C:\Users\joice.silva\Downloads\182714.jpg" alt="Família de carro"> 
+
+        <h2>QUEM SOMOS</h2>
+        <ul id="quemSomosList"></ul>
+
+        <h2>PARCEIROS</h2>
+        <ul id="parceirosList"></ul>
+
+        <h2>ROTEIROS</h2>
+        <ul id="roteirosList"></ul>
+    </main>
+
+    <script src="script.js"></script> 
+</body>
+</html>
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #444;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+form a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+form a:hover {
+    background-color: #45a049;
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
